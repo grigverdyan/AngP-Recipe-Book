@@ -9,8 +9,7 @@ import {Recipe} from "./recipe.model";
   templateUrl: './recipes.component.html',
 })
 export class RecipesComponent implements OnInit {
-  selectedRecipe: Recipe = new Recipe('', '', '');
-
+  selectedRecipe: Recipe = {} as Recipe;
   constructor() { }
 
   ngOnInit(): void {

@@ -13,8 +13,7 @@ import {RecipeService} from "../../recipe.service";
   templateUrl: './recipe-item.component.html',
 })
 export class RecipeItemComponent implements OnInit {
-  @Input() recipe = new Recipe('', '', '', []);
-  // @Output() recipeSelected = new EventEmitter<void>();
+  @Input() recipe!: Recipe;
 
   constructor(private recipeService: RecipeService) { }
 

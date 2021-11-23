@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
+  title = "Recipe Book";
+
   loadedFeature = 'recipe';
 
   onNavigate(feature: string) {

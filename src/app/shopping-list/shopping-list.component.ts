@@ -9,8 +9,9 @@ import {ShoppingListService} from "./shopping-list.service";
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
 })
+
 export class ShoppingListComponent implements OnInit {
-  ingredients: Ingredient[] = [];
+  ingredients!: Ingredient[];
   constructor(private shoppingListService: ShoppingListService) { }
 
   ngOnInit() {
